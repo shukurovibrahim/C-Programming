@@ -1,0 +1,20 @@
+# Ignore JetBrains IDE folders
+.idea/
+*.iml
+
+# Ignore CLion build folders
+cmake-build-*/
+build/
+
+# Ignore CMake cache/config files
+CMakeLists.txt
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+
+# Ignore executables and object files
+*.exe
+*.o
+*.out
+*.obj
+*.log
