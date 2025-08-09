@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <string.h>
 
 // Function Declaration: Clear purpose with parameters documented
 /**
@@ -16,8 +17,15 @@ void happyBirthday(char name[], int age) {
 
 int main() {
     // Initialize variables with descriptive names
-    char celebrantName[50] = "Ibrahim";  // More semantic than just 'name'
-    int celebrantAge = 23;
+    char celebrantName[50] = "";  // More semantic than just 'name'
+    int celebrantAge = 0;
+
+    printf("Enter your name: \n");
+    fgets(celebrantName, sizeof(celebrantName), stdin);
+    celebrantName[strlen(celebrantName) - 1] = '\0';
+
+    printf("Enter your age: \n");
+    scanf("%d", &celebrantAge);
 
     // Call the function multiple times to show reusability
     happyBirthday(celebrantName, celebrantAge);  // Call 1
