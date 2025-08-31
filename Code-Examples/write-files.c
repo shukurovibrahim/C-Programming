@@ -8,7 +8,7 @@ int main()
 
     if (pFile == NULL)
     {
-        printf("Couldn't open the file!");
+        printf("Error while ");
         return 1;
     }
 
